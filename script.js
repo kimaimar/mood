@@ -93,7 +93,7 @@ function showResult() {
   imgElement.src = imgSrc;
   imgElement.alt = "Gambar Parfum"; // Text alternatif untuk gambar
   imgElement.style.width = '200px'; // Atur ukuran gambar sesuai kebutuhan
-  imgElement.style.marginTop = '50px'; // Jarak atas antara gambar dan teks
+  imgElement.style.marginTop = '60px'; // Jarak atas antara gambar dan teks
   imgElement.style.marginBottom = '10px'; // Jarak bawah antara gambar dan teks
 
   // Tambahkan gambar ke dalam div hasil
