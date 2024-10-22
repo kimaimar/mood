@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Emosi Parfum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>✨Temukan Parfum Sempurna Untukmu✨</h1>
+        <p id="quiz-intro">Jawab 7 pertanyaan ini untuk menemukan parfum yang cocok dengan suasana hatimu!</p>
+
+        <!-- Halaman Awal -->
+        <div id="start-page">
+          <p>Klik tombol di bawah untuk memulai.</p>
+          <button onclick="startQuiz()">Start Mood Test</button>
+        </div>
+
+        <!-- Tambahkan ini di dalam div .quiz-container -->
+        <div class="loader" id="loader">
+          <img src="Aset\Loading.gif" alt="Loading...">
+        </div>
+
+
+        <div id="quiz" class="hidden">
+            <!-- Pertanyaan 1 -->
+            <div class="question">
+              <p>1. Ketika kamu membayangkan hari idealmu, rasanya gimana?</p>
+              <button onclick="answer(1, 'a')">Dipenuhi tawa dan momen-momen bahagia</button>
+              <button onclick="answer(1, 'b')">Menghabiskan waktu sama orang spesial</button>
+              <button onclick="answer(1, 'c')">Melakukan sesuatu yang baru dan menantang</button>
+              <button onclick="answer(1, 'd')">Menikmati hari yang tenang, santai aja</button>
+              <button onclick="answer(1, 'e')">Merasa percaya diri dan semangat menyambut hari depan</button>
+            </div>
+
+            <!-- Pertanyaan 2 -->
+            <div class="question hidden">
+              <p>2. Kalau ada tantangan tiba-tiba, biasanya kamu bagaimana?</p>
+              <button onclick="answer(2, 'a')">Coba lihat sisi positifnya dan tetap senyum</button>
+              <button onclick="answer(2, 'b')">Ingat dukungan dari orang-orang terdekat</button>
+              <button onclick="answer(2, 'c')">Anggap itu kesempatan untuk menunjukkan tekadmu</button>
+              <button onclick="answer(2, 'd')">Tetap tenang dan ambil langkah perlahan</button>
+              <button onclick="answer(2, 'e')">Lihat itu sebagai pelajaran untuk masa depan yang lebih baik</button>
+            </div>
+
+            <!-- Pertanyaan 3 -->
+            <div class="question hidden">
+              <p>3. Saat beraktivitas di luar, apa yang paling kamu nikmati?</p>
+              <button onclick="answer(3, 'a')">Denger suara burung atau tawa orang-orang di sekitar</button>
+              <button onclick="answer(3, 'b')">Berbagi cerita dan momen sama orang lain</button>
+              <button onclick="answer(3, 'c')">Merasa bebas dan energik untuk menjelajah</button>
+              <button onclick="answer(3, 'd')">Menikmati ketenangan alam yang sunyi</button>
+              <button onclick="answer(3, 'e')">Merenungkan hal positif dan apa yang bisa dicapai</button>
+            </div>
+
+            <!-- Pertanyaan 4 -->
+            <div class="question hidden">
+              <p>4. Apa yang bikin kamu semangat menjalani hari di pagi hari?</p>
+              <button onclick="answer(4, 'a')">Bayangkan semua hal seru yang bakal terjadi</button>
+              <button onclick="answer(4, 'b')">Ngobrol sama orang-orang yang aku sayang</button>
+              <button onclick="answer(4, 'c')">Tantangan baru yang siap kutaklukkan</button>
+              <button onclick="answer(4, 'd')">Waktu tenang buat diriku sebelum mulai beraktivitas</button>
+              <button onclick="answer(4, 'e')">Harapan bahwa hari ini bakal bawa hal-hal baik</button>
+            </div>
+
+            <!-- Pertanyaan 5 -->
+            <div class="question hidden">
+              <p>5. Setelah hari yang panjang, biasanya kamu ngapain?</p>
+              <button onclick="answer(5, 'a')">Ingat-ingat momen lucu atau menghibur</button>
+              <button onclick="answer(5, 'b')">Cari waktu buat terhubung sama orang lain</button>
+              <button onclick="answer(5, 'c')">Merenung tentang pencapaian yang udah diraih</button>
+              <button onclick="answer(5, 'd')">Ambil waktu buat menenangkan diri dan refleksi</button>
+              <button onclick="answer(5, 'e')">Pikirin hal positif yang bisa dipelajari hari ini</button>
+            </div>
+
+            <!-- Pertanyaan 6 -->
+            <div class="question hidden">
+              <p>6. Kalau dapet kabar baik, biasanya reaksimu gimana?</p>
+              <button onclick="answer(6, 'a')">Senyum lebar dan merasa ringan</button>
+              <button onclick="answer(6, 'b')">Mau segera bagikan kebahagiaan ini sama orang lain</button>
+              <button onclick="answer(6, 'c')">Termotivasi dan siap untuk lakukan lebih banyak lagi</button>
+              <button onclick="answer(6, 'd')">Bersyukur dan menikmati momen itu</button>
+              <button onclick="answer(6, 'e')">Langsung mikir tentang peluang cerah di masa depan</button>
+            </div>
+
+            <!-- Pertanyaan 7 -->
+            <div class="question hidden">
+              <p>7. Apa yang paling pengen kamu jaga dalam hidup sehari-hari?</p>
+              <button onclick="answer(7, 'a')">Rasa senang dan ringan di hati</button>
+              <button onclick="answer(7, 'b')">Hubungan yang penuh cinta dan kehangatan</button>
+              <button onclick="answer(7, 'c')">Semangat untuk terus maju meskipun ada rintangan</button>
+              <button onclick="answer(7, 'd')">Kedamaian batin yang bikin hari-hariku lebih baik</button>
+              <button onclick="answer(7, 'e')">Sikap positif yang bikin aku tetap optimis</button>
+            </div>
+
+
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

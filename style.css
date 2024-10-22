@@ -1,0 +1,129 @@
+body {
+  background-color: #5ac57f;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-container {
+  background-color: #fff2cc;
+  border: 3px dashed #ffa;
+  margin: 50px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: #ff6f61;
+}
+
+button {
+  background-color: #ff9999;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6666;
+}
+
+#result {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 18px; /* Ukuran font */
+  font-weight: bold; /* Tebal tulisan */
+  color: #333; /* Warna tulisan */
+  background-color: #ffebcc; /* Warna background */
+  padding: 15px; /* Spasi di dalam box */
+  border-radius: 10px; /* Membuat sudut yang melengkung */
+  margin-top: 20px; /* Jarak dari elemen atas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+#next {
+  display: none;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.next-button{
+  background-color: #b78c8c;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loader {
+  display: none; /* Sembunyikan loader secara default */
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; /* Pastikan loader di atas elemen lain */
+}
+
+.loader img {
+  width: 100px; /* Sesuaikan ukuran sesuai kebutuhan */
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .quiz-container {
+      width: 90%;
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 1.8em;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 0.9em;
+  }
+
+  #result {
+      font-size: 1.4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-container {
+      width: 95%;
+      margin: 30px auto;
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.6em;
+  }
+
+  button {
+      padding: 8px;
+      font-size: 0.8em;
+  }
+
+  #result {
+      font-size: 1.3em;
+  }
+}
